@@ -7,13 +7,14 @@ build:
 	rm -rf dist/*
 	npm run build
 
+# IT'S BEEN PUBBED
+
 # upload-assets:
-# 	aws s3 rm s3://spectator-static-assets/TK/ --recursive --exclude "*" --include "*" --profile=spec
-# 	aws s3 cp dist/ s3://spectator-static-assets/TK/ --recursive --exclude "*" --include "*" --acl=public-read --profile=spec
+# 	aws s3 rm s3://spectator-static-assets/the-box/ --recursive --exclude "*" --include "*" --profile=spec
+# 	aws s3 cp dist/ s3://spectator-static-assets/the-box/ --recursive --exclude "*" --include "*" --acl=public-read --profile=spec
 
 # deploy: build upload-assets
-deploy: build
-	cd dist && git add . && git commit -m 'Deploy to gh-pages' && git push origin gh-pages
+# 	cd dist && git add . && git commit -m 'Deploy to gh-pages' && git push origin gh-pages
 
 clean:
 	rm -rf dist
